@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .contact-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: auto; 
+        }
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin: 10px 0;
+        }
+        .info-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            margin-top: 20px;
+        }
+        .info-box {
+            background: #e7f3fe;
+            border-radius: 10px;
+            padding: 15px;
+            width: calc(50% - 20px); 
+            margin: 10px; 
+            box-sizing: border-box; 
+            text-align: center;
+            min-width: 250px; 
+        }
+        .info-box h3 {
+            margin: 10px 0;
+        }
+        .info-box p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .icon {
+            font-size: 30px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .info-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <img src="img/460596493_1583191069272960_2078646928548920413_n.png" alt="Profile" class="profile-image"> <!-- Replace with actual image path -->
+        <h2>CONTACTS</h2>
+        <p>If you need help, feel free to contact us!</p>
+        
+        <div class="info-container">
+            <div class="info-box">
+                <div class="icon">📍</div>
+                <h3>EMAIL US</h3>
+                <p>joshua@gmail.com</p>
+                <p>herbs/plants@gmail.com</p>
+            </div>
+            <div class="info-box">
+                <div class="icon">📞</div>
+                <h3>CONTACT US :</h3>
+                <p>GLOBE: 0992929219747</p>
+                <p>SMART: 0980838138</p>
+                <p>HOTLINE: 79139373791</p>
+            </div>
+            <div class="info-box">
+                <div class="icon">⭐</div>
+                <h3>Rate us:</h3>
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+        <a href="Mobile.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>

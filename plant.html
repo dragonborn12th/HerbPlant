@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mobile-Amin</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        
+
+        /* Header SA HERBS AND PLANTS KULAY GRAY */
+        .header {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+      
+        /* Content Area */
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design  SA TABLE SECTION AT SA TEXT AT SA IMAGE */
+        @media screen and (max-width: 768px) {
+            table, tr, th, td {
+                display: block;
+                width: 100%;
+            }
+
+            th, td {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            th {
+                height: auto;
+            }
+
+            .herb-description {
+                font-size: 16px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .herb-description {
+                font-size: 14px;
+            }
+        }
+           /* The nabar in html part locate it the comments */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: #007bff;
+        }
+        .nav-link {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .change-color {
+            color: red;
+        }
+        .nav-link:hover {
+            color: red;
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .nav-link {
+                padding: 5px;
+            }
+        }
+        /* FOOTER PART SA ILALIM */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: auto;
+        }
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            footer {
+                font-size: 12px;
+                padding: 15px 5px;
+            }
+            footer p {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- SA TAAS HEADER KULAY GRAY -->
+        <header class="header">
+          <h2> HERBS AND PLANTS</h2>
+        </header>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<h1 style="color: green;"> TYPES OF PLANTS </h1>
+</center>
+<br>
+
+<div class="container">
+    <nav style="width: 100%;">
+          <!-- !! "navbar" IF GUSTONG BAGUHIN   NAVIGATION KULAY BLUE-->
+        <ul class="navbar" style="list-style-type: none; padding: 0;">
+            <li><a href="Mobile.html" class="nav-link">Herbs</a></li>
+            <li><a href="plant.html" class="nav-link">Plants</a></li>
+            <li><a href="profile.html" class="nav-link">Profile</a></li>
+            <li><a href="index.html" class="nav-link">Homepage</a></li>
+            <li><a href="contact.html" class="nav-link">Contacts</a></li>
+        </ul>
+    </nav>
+    
+       <div class="container">
+         <!-- !! "CONTECT SA TABLE WHICH YOUNG INFORMATION AT IMAGE SA PLANT  -->
+    <table border="1">
+        <br>
+        <br>
+        <br>
+        <tr>
+            <th style="color: rgb(71, 217, 71); background-color: gray;" height="100"><h2>Different kind of plant</h2></th>
+            <th style="color: rgb(60, 215, 60);background-color: gray;"><h2>Description</h2></th>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/2efaf995-5af1-4a70-b0d2-ab441ba439de.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The pencil cactus, also known as Euphorbia tirucalli, is a fascinating succulent native to semi-arid tropical climates in Africa and India. Despite its common name, it is not a true cactus but belongs to the Euphorbia family1. This plant features slender, pencil-like branches that can grow up to 30 feet tall in the wild, though it remains much smaller when cultivated indoors
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/2f4e9a18-2ceb-4556-8ead-1ef07125d017.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The candelabra cactus, also known as Euphorbia ingens or Myrtillocactus cochal, is a striking succulent that resembles a candelabra with its branching structure12. This plant can grow up to 40 feet tall in its natural habitat but typically reaches about 8 to 10 feet when grown indoors1. It features dark green, columnar stems with multiple ribs and sharp spines
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/3a914aba-63c8-44dd-be12-dfa9d6280bd4.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The jade plant, also known as Crassula ovata, is a popular succulent admired for its thick, woody stems and oval-shaped, fleshy leaves1. Native to South Africa, this plant is often associated with good luck and prosperity2. Jade plants can grow up to 3 to 6 feet tall indoors, although they are slow-growing, typically adding only about 2 inches per year
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/3c8fb794-587c-4df3-acb6-ad8fff4738d5.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+               Sedeveria ‘Letizia’, a beautiful hybrid succulent that is a cross between Sedum and Echeveria1. This plant is known for its rosette-forming leaves that can turn a vibrant red when exposed to plenty of sunlight1
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/4ab9d4e2-e99a-4f62-8131-bec203e97ea7.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The string of pearls plant, scientifically known as Curio rowleyanus, is a unique and attractive succulent that features small, spherical leaves resembling pearls1. These leaves grow on long, trailing stems, making the plant ideal for hanging baskets or as a cascading element in mixed succulent arrangements
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/5dae46c6-0ec7-4542-be4d-1dd7e95cdd38.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The ZZ plant, or Zamioculcas zamiifolia, is a popular houseplant known for its striking, glossy green leaves and upright growth1. Native to Eastern Africa, this plant is highly valued for its ability to thrive in low-light conditions and its minimal care requirements
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/8ff47116-9e8a-4e63-94f0-96a466fe0add.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Echeveria ‘Desert Rose’ is a stunning succulent known for its beautiful rosette shape and vibrant colors. This plant is part of the Crassulaceae family and is native to Central and South America1. The ‘Desert Rose’ variety typically features fleshy, blue-green leaves with pink or red edges, giving it a striking appearance 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/13feb82f-f04d-4a91-a827-97bfb4f34a09.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The yucca plant is a versatile and hardy perennial known for its striking, sword-like leaves and tall flower spikes1. Native to the arid regions of North and Central America, yuccas are well-adapted to dry, sandy soils and can thrive in both indoor and outdoor environments
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/20b9a09f-9ac9-423d-806f-a5e0f7df8970.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Saffron is a highly prized spice derived from the flower of the Crocus sativus, commonly known as the saffron crocus. The vivid crimson stigmas and styles, called threads, are collected and dried for use mainly as a seasoning and coloring agent in food. Saffron is renowned for its unique flavor, aroma, and the vibrant golden-yellow hue it imparts to dishes.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/78d72c72-705b-4466-a231-ac365abfe80d.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Donkey’s Tail plant, also known as Sedum morganianum, is a popular succulent known for its long, trailing stems covered in fleshy, blue-green, tear-drop-shaped leaves. Native to Honduras and Mexico, this plant is often grown in hanging baskets where its stems can cascade beautifully1
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/267ede95-add9-440c-a740-51516c136657.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Indian Fig Cactus is notable for its thick, fleshy pads, which are actually modified stems called cladodes2. These pads can store water, allowing the plant to survive in dry conditions. The cactus produces vibrant yellow, red, or white flowers, which eventually develop into edible fruits known as prickly pears2. These fruits are not only delicious but also rich in vitamins and antioxidants
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/634cb5b1-74b4-430a-ad7d-3ba8d27b537b.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The snake plant, also known as Sansevieria trifasciata or mother-in-law’s tongue, is a popular and hardy houseplant recognized for its stiff, sword-like leaves that grow upright. These leaves are often green-banded or striped with a yellow or cream border1. Native to West Africa, the snake plant is known for its resilience and low-maintenance requirements, making it an excellent choice for both novice and experienced gardeners2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/0791f385-4e12-4e8c-a543-2700249e278a.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Hens and Chicks plant, scientifically known as Sempervivum, is a charming and resilient succulent that forms rosettes of fleshy, pointed leaves. The larger, central rosette is referred to as the “hen,” while the smaller offshoots that cluster around it are called "chicks"1
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/a6754db1-b32b-43cf-87ec-3f6540aefc86.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Hoya plant, commonly known as the wax plant, is a popular houseplant admired for its thick, waxy leaves and clusters of star-shaped flowers. Native to Asia and Australia, Hoyas are part of the Apocynaceae family and are known for their low-maintenance care requirements
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/ad817b0f-d3a6-4a57-8ea7-9085a78cf806.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Portulacaria afra, commonly known as the Elephant Bush, is a versatile and attractive succulent native to South Africa1. This plant is known for its small, round, fleshy leaves and reddish-brown stems that can grow into a dense, shrubby form2. It is often used in bonsai due to its ability to be easily shaped and trained
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/d12ac9db-094f-47fe-af89-b594d346f9ef.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Wax Agave, also known as Echeveria agavoides, is a stunning succulent that resembles an agave plant, hence its name1. This plant forms a dense, usually solitary rosette of thick, fleshy, triangular leaves with a terminal spine. The leaves are typically apple green with edges that turn reddish when exposed to bright sunlight
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/f2ac8fa8-97fa-47fd-ab1d-800400660c19.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Echeveria ‘Green Prince’ is a beautiful succulent known for its vibrant green rosettes and easy care requirements. This plant belongs to the Echeveria genus, which is part of the Crassulaceae family1. Here are some key care tips for the Echeveria ‘Green Prince’:
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/052a8c4c-ccb0-4c64-b4a5-9f1a819fbe32.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Red Pagoda plant, scientifically known as Crassula capitella, is a striking succulent native to South Africa. It is admired for its densely stacked, fleshy, triangular leaves that are bright green with crimson tips. The color of the leaves becomes more vibrant in response to cool temperatures and bright sunlight, especially during the winter.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/20ad47c7-4923-4f43-b60d-8b45a7cf416c.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Devil’s Horns, also known as the “sign of the horns,” is a hand gesture made by extending the index and little fingers while holding the middle and ring fingers down with the thumb. This gesture has various meanings and uses across different cultures and contexts.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/0d0525e2-7372-40bc-b8ee-9eb14c2c1e34.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                The Giant Watch Chain, scientifically known as Crassula ‘Imperialis’, is a fascinating succulent that features densely packed, tiny leaves around its branching stems. This plant is a thicker form of Crassula muscosa, often referred to as the Watch Chain plant1. The leaves are light green to grey-green or brownish-green, giving the plant a unique, textured appearance
+            </td>
+        </tr>
+    </table>
+  <!-- !! "FOOTER SA CSS - HTML PART -->
+  <footer>
+    <p>&copy; 2024 Herbs and Plants. All rights reserved.</p>
+    <p>
+        <a href="privacy.html">Privacy Policy</a> | 
+        <a href="terms.html">Terms of Service</a> | 
+        <a href="contact.html">Contact Us</a>
+    </p>
+</footer>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

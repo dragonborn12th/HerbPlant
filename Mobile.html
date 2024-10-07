@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mobile-Amin</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+ 
+
+        /* Header Styles */
+        .header {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .content {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        
+     /* Responsive Styling  sa table naman responsive*/
+     @media screen and (max-width: 768px) {
+            table, tr, th, td {
+                display: block;
+                width: 100%;
+            }
+
+            th, td {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            th {
+                height: auto;
+            }
+
+            .herb-description {
+                font-size: 16px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+ /* Responsive navigation sa container */
+        @media screen and (max-width: 480px) {
+            .herb-description {
+                font-size: 14px;
+            }
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: #007bff;
+        }
+        .nav-link {
+            color: rgb(29, 32, 17);
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .change-color {
+            color: red;
+        }
+        .nav-link:hover {
+            color: red;
+        }
+         /* Responsive nagivation SA TAAS KULAY BLUE @media*/
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .nav-link {
+                padding: 5px;
+            }
+        }
+          /* Responsive footer SA TAAS KULAY gray @media*/
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: auto;
+        }
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            footer {
+                font-size: 12px;
+                padding: 15px 5px;
+            }
+            footer p {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+          <h2> HERBS AND PLANTS</h2>
+        </header>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<h1 style="color: green;"> TYPES OF HERBS </h1>
+</center>
+<br>
+
+<div class="container">
+      <!-- !! "navbar" IF GUSTONG BAGUHIN   NAVIGATION KULAY BLUE-->
+    <ul class="navbar" style="list-style-type: none; padding: 0;">
+        <li><a href="Mobile.html" class="nav-link">Herbs</a></li>
+        <li><a href="plant.html" class="nav-link">Plants</a></li>
+        <li><a href="profile.html" class="nav-link">Profile</a></li>
+        <li><a href="index.html" class="nav-link">Homepage</a></li>
+        <li><a href="contact.html" class="nav-link">Contacts</a></li>
+    </ul>
+    <div class="container">
+              <!-- !! "CONTECT SA TABLE WHICH YOUNG INFORMATION AT IMAGE SA PLANT  SA TABLE  -->
+    <table border="1">
+        <br>
+        <br>
+        <tr>
+            <th style="color: rgb(71, 217, 71); background-color: gray;" height="100"><h2>Different kind of Herbs</h2></th>
+            <th style="color: rgb(60, 215, 60);background-color: gray;"><h2>Description</h2></th>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/520768bf-e5c1-4a15-b114-a2bd6f285821.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Agrimony is an herb valued for its astringent, anti-inflammatory, and diuretic properties. It has been traditionally used in herbal medicine to support digestive health and relieve conditions such as indigestion and diarrhea. When applied externally, agrimony can help soothe skin irritations, cuts, and bruises. It is also beneficial for respiratory health, often used as a tea to ease sore throats and coughs. The herb’s diuretic properties make it useful for supporting kidney and bladder health. Additionally, agrimony has been used historically to stop minor bleeding and promote wound healing. It's important to consult a healthcare provider before using agrimony, especially if pregnant or breastfeeding.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/bd498a00-4130-4fe3-a095-19e2f16df209.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+             Agrimonia eupatoria, often referred to as agrimony, with a focus on its medicinal uses: Agrimony (Agrimonia eupatoria) is a perennial herb characterized by its tall spikes adorned with small, yellow flowers. It has been traditionally valued in herbal medicine for its numerous therapeutic properties. Agrimony is known primarily for its astringent qualities, making it effective in managing digestive issues, such as diarrhea and indigestion. Additionally, it can be used to soothe skin irritations and minor wounds when applied topically, thanks to its anti-inflammatory properties.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/126904f6-567e-406f-9c85-0a1ffa95ba68.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+Chia Seeds are tiny black or white seeds derived from the Salvia hispanica plant, native to Central and South America. Known for their impressive nutritional profile, chia seeds are a rich source of omega-3 fatty acids, fiber, protein, and various essential minerals such as calcium, magnesium, and phosphorus. These seeds are unique due to their ability to absorb water, expanding up to 12 times their weight, which helps promote a feeling of fullness and aids in digestion.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/572b7e9d-2cdc-4540-b9e0-b19c560ab287.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+
+                Here’s a detailed description of cinnamon, focusing on its medicinal importance:
+
+                Cinnamon is a spice derived from the inner bark of trees belonging to the Cinnamomum genus, primarily Cinnamomum verum (true cinnamon) and Cinnamomum cassia (cassia cinnamon). Renowned for its distinct aroma and flavor, cinnamon has been used in traditional medicine for centuries across various cultures.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/9c7caacd-e108-4f5f-bdaf-c54222dea2e1.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Eucalyptus is a versatile herb known for its aromatic leaves and medicinal properties. Its leaves are commonly used to produce essential oil, which is often utilized for its antiseptic and anti-inflammatory effects. Eucalyptus is also valued for its ability to relieve respiratory issues, such as coughs and congestion, making it a popular ingredient in cough syrups and throat lozenges. The tree itself can grow to impressive heights and is recognized for its distinctive bark, which often sheds in strips.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/4c81ce07-5301-49fb-9f42-9ddd7d897545.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Cloves are aromatic flower buds harvested from the clove tree, scientifically known as Syzygium aromaticum. They are primarily native to the Maluku Islands in Indonesia and are now cultivated in several tropical regions around the world. Cloves have a warm, sweet, and slightly bitter flavor, making them a popular spice in both sweet and savory dishes, as well as in beverages like chai and mulled wine. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/a3693d28-22c6-4222-b511-8b6555cb54b4.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Basil (Ocimum basilicum) is a fragrant herb belonging to the mint family (Lamiaceae), native to tropical regions of Africa and Southeast Asia. It is widely known for its aromatic leaves, which are commonly used in cooking, particularly in Mediterranean and Asian cuisines. Basil leaves can vary in shape and color, with varieties such as sweet basil featuring bright green, smooth leaves, 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/ab641b7b-77f1-4e31-9cd4-534b5e3ad5b4.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Marshmallow (Althaea officinalis) is a perennial herb native to Europe, North Africa, and parts of Asia. Known for its soft, fluffy flowers, the plant can grow up to 4 feet tall and typically features heart-shaped leaves and pale pink or white blossoms. The root of the marshmallow plant has a long history of use in herbal medicine, particularly for its soothing properties, as it contains mucilage, a gelatinous substance that can help relieve coughs and sore throats. Marshmallow is often used in teas, tinctures, and syrups to promote digestive health and alleviate inflammation.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/bdfa2037-d208-416d-ac8d-126109356805.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Peppermint (Mentha × piperita) is a hybrid herb derived from the cross between water mint and spearmint, known for its invigorating aroma and refreshing flavor. This perennial plant can grow up to 3 feet tall and features dark green, serrated leaves that are often covered in tiny hairs, giving them a slightly fuzzy texture. Peppermint is widely used in culinary applications, such as flavoring candies, desserts, and beverages, as well as in herbal teas. In addition to its culinary uses, peppermint is celebrated for its medicinal properties; it is commonly utilized to relieve digestive issues, headaches, and respiratory problems due to its high menthol content. 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/d84d3302-3a9e-4242-b0fb-175b81b2c73e.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Hibiscus refers to a genus of flowering plants in the mallow family (Malvaceae), with Hibiscus sabdariffa, commonly known as roselle, being one of the most well-known species. Hibiscus plants are characterized by their large, vibrant flowers, which can come in various colors, including red, pink, yellow, and white. The flowers are not only visually striking but also edible, often used in teas, salads, and desserts.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/de896d72-e00d-40d8-90b4-2aa3f1b73fe6.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Turmeric (Curcuma longa) is a flowering plant belonging to the ginger family (Zingiberaceae) and is primarily cultivated in South Asia, particularly in India. Known for its vibrant golden-yellow rhizome, turmeric has been used for centuries in culinary, medicinal, and cultural applications. The rhizome is the source of the spice turmeric, which is commonly used to flavor and color foods, especially in curries, mustards, and rice dishes.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/eda622f9-6339-42ea-a38e-29db9cde4bec.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Lavender (Lavandula) is a genus of flowering plants in the mint family (Lamiaceae), renowned for its fragrant purple flowers and aromatic leaves. Native to the Mediterranean region, lavender is cultivated in many parts of the world, valued for both its beauty and versatility. The most commonly used species, Lavandula angustifolia, produces highly aromatic flowers that are harvested for essential oils, dried flower arrangements, and culinary applications.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/eebb4391-f575-42ca-ad60-16bd36460ece.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Rosemary (Salvia rosmarinus), a fragrant evergreen herb, is a member of the mint family (Lamiaceae) and is native to the Mediterranean region. Known for its needle-like leaves and woody stems, rosemary can grow as a bushy shrub, reaching heights of up to 5 feet. The leaves are dark green on top and silvery beneath, and the plant produces small, pale blue or white flowers that attract pollinators.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/6f988df9-56ad-471b-b7ab-2e74c89f05d0.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Onion (Allium cepa) is a bulbous vegetable that is a staple in cuisines around the world. Belonging to the Allium family, which also includes garlic, leeks, and chives, onions are characterized by their layered, bulbous structure and strong flavor. They come in various types, including yellow, red, and white onions, each offering distinct tastes and culinary uses.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/fb4ed442-ee7e-4a85-b869-fe3a3077a231.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Raspberry ketone is a natural compound found in raspberries (Rubus idaeus) that is responsible for their distinct aroma. It is also present in smaller amounts in other fruits such as blackberries and kiwis. Raspberry ketones have gained popularity as a dietary supplement, often marketed for weight loss and fat-burning properties.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/b29381c4-012b-491c-a074-9a5329e78058.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Red basil (Ocimum basilicum var. purpurascens) is a vibrant variety of basil known for its striking purple-red leaves and aromatic flavor. This herb is commonly cultivated in many regions and is prized not only for its culinary uses but also for its ornamental appeal in gardens. The leaves of red basil have a slightly spicier and more robust flavor compared to sweet basil, making them a popular choice in various dishes.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/d652a7b4-1ba9-4baf-b613-4c937312765c.jpg" alt="Herb Image" width="350" height="350">
+            </td>
+            <td class="herb-description">
+                Anise (Pimpinella anisum) is a flowering plant in the Apiaceae family, known for its aromatic seeds that have a sweet, licorice-like flavor. Native to the eastern Mediterranean region and Southwest Asia, anise has been cultivated for thousands of years for its culinary and medicinal properties.
+            </td>
+        </tr>
+    </table>
+      <!-- !! "FOOTER SA CSS - HTML PART -->
+      <footer>
+        <p>&copy; 2024 Herbs and Plants. All rights reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+</div>
+    </div>
+</div>
+
+</body>
+</html>
